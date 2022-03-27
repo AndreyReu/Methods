@@ -66,12 +66,10 @@ public class Main {
         for (int i = 0; i < doubleNo.length; i++) {
             if (doubleNo[i] == doubleNo[i + 1]) {
                 System.out.println("Дубль " + doubleNo[i]);
-                break;
-            } else {
-                System.out.println("Нет дублей ");
-                break;
+                return;
             }
         }
+        System.out.println("Нет дублей ");
     }
 
     //    Метод, задания №5:
@@ -115,7 +113,7 @@ public class Main {
 
     //    Задание №4:
     public static void task4() {
-        String englishLetters = "aabccddefgghiijjkk";
+        String englishLetters = "abccddefgghiijjkk";
         checkDouble(englishLetters);
     }
 
